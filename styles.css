@@ -1,0 +1,125 @@
+/* This is the reset for the browser (Chrome) */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*=============Navigation================*/
+
+body {
+    background-color: rgb(223, 223, 223);
+}
+
+.navigation {
+    height: 72px;
+    width: 100%;
+    display: flex;
+    background-color: #2b2b2b;
+}
+
+
+.logo-text-container {
+    display: flex;
+    height: 72px;
+    width: 290px;
+    margin-right: 100px;
+    /* background-color: blue; */
+}
+
+#efa-logo img {
+    height: 72px;
+    width: 72px;
+    /* background-color: magenta; */
+}
+
+#efa-logo-nav-text {
+    width: 191px;
+    font-size: 19px;
+    font-family: 'Crimson Text Regular';
+    font-weight: lighter;
+    text-align: center;
+    margin: 18px auto;
+    text-decoration: none;
+    text-transform: none;
+    color: #ffffff;
+    /* background-color: seagreen; */
+}
+/* ----------------------- */
+
+a {
+text-decoration: none;
+text-align: center;
+display: flex;
+/* border: black solid 1px; */
+padding: 23px 20px 0 20px;
+justify-content: center;
+font-family: "Overpass Bold";
+text-transform: uppercase;
+/* background-color: tomato; */
+color: #ffff;
+font-size: 14px;
+}
+
+.meeting-button {
+    height: 72px;
+    width: 203px;
+    background-color: lightblue;
+    float: right;
+}
+
+.apply-button {
+    height: 72px;
+    width: 150px;
+    background-color: red;
+    float: right;
+}
+
+a:hover {
+    background-color: black;
+}
+
+.search-button-wrapper {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #ffff;
+}
+
+.search-button-circle {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background-color: #2b2b2b;
+}
+
+.search-stick {
+    position: relative;
+    height: 14px;
+    width: 6px;
+    border-radius: 4px;
+    top: 4px;
+    left: 14px;
+    transform: rotate(-30deg);
+    background-color: white;
+}
+
+    /* =========Downloaded Fonts=========== */
+
+/* Crimson Font (google fonts) */
+
+@font-face {
+    font-family: 'Crimson Text Regular';
+    src: url(./assets/fonts/Crimson_Text/CrimsonText-Regular.ttf);
+}
+
+/* Overpass font (google fonts */
+
+@font-face {
+    font-family: "Overpass Bold";
+    src: url(./assets/fonts/Overpass/Overpass-Bold.ttf);
+}
