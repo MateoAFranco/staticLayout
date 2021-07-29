@@ -47,7 +47,7 @@ body {
 }
 /* ----------------------- */
 
-a {
+#header {
 text-decoration: none;
 text-align: center;
 display: flex;
@@ -61,23 +61,53 @@ color: #ffff;
 font-size: 14px;
 }
 
+#header:hover {
+    background-color: black;
+}
+
 .meeting-button {
     height: 72px;
     width: 203px;
-    background-color: lightblue;
-    float: right;
+    border-left: white solid 4px;
+    background-color: #348db9;
 }
+
+/* .meeting-button a:hover {
+background-color: lightgray;
+} */
+
+.meeting-button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Overpass Bold';
+    margin: 20px 10px 0px 13px;
+    display: block;
+    color: white;
+}
+
 
 .apply-button {
     height: 72px;
     width: 150px;
-    background-color: red;
-    float: right;
+    border-left: white solid 4px;
+    background-color: #e33e42;
+}
+/* 
+.apply-button a:hover {
+background-color: lightgray;
+} */
+
+.apply-button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    margin: 20px 10px 0px 28px;
+    font-family: 'Overpass Bold';
+    color: white;
 }
 
-a:hover {
-    background-color: black;
-}
 
 .search-button-wrapper {
     height: 20px;
@@ -108,7 +138,7 @@ a:hover {
     background-color: white;
 }
 
-    /* =========Downloaded Fonts=========== */
+    /* =========Downloaded Fonts======= */
 
 /* Crimson Font (google fonts) */
 
@@ -122,4 +152,122 @@ a:hover {
 @font-face {
     font-family: "Overpass Bold";
     src: url(./assets/fonts/Overpass/Overpass-Bold.ttf);
+}
+
+
+    /* =========Hero Video======= */
+
+.hero-video {
+        width: 100%;
+    }
+
+.free-course-wrapper {
+    position: absolute;
+    height: 110px;
+    width: 1000px;
+    background-color: black;
+    opacity: .7;
+    top: 380px;
+    left: 190px;
+}
+
+#free-course-text {
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    font-family: 'Overpass Bold';
+    font-size: 60px;
+    text-align: center;
+}
+
+.learn-more-wrapper {
+    position: absolute;
+    height: 60px;
+    width: 350px;
+    background-color: #e33e42;
+    top: 510px;
+    left: 190px;
+}
+
+#learn-more-text {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Overpass Bold';
+    letter-spacing: 4px;
+    padding: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===========Content Wrapper============ */
+
+.course-info-wrapper {
+    width: 100%;
+    height: 190px;
+    box-sizing: border-box;
+    /* background-color: violet; */
+    text-align: center;
+    color: #348db9;
+    font-family: 'Overpass Bold';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 28px;
+    padding-top: 93px;
+}
+
+.options-wrapper {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    justify-items: center;
+    /* background-color: cornflowerblue; */
+}
+
+
+#option-box {
+    height: 430px;
+    width: 360px;
+    font-family: 'Overpass Bold';
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#option-box:hover {
+    color: grey;
+    opacity: .6;
+}
+
+#option-box h1 {
+    font-size: 35px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+#option-box p {
+    color: darkgray;
+    font-size: 21px;
+}
+
+
+.sign-up-button {
+    height: 70px;
+    width: 360px;
+    position: relative;
+    /* top: 380px; */
+    font-family: 'Overpass Bold';
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: #e33e42;
+}
+
+.sign-up-button h1 {
+    font-size: 27px;
 }
